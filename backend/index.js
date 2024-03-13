@@ -13,13 +13,19 @@ const port = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: true,
+    origin: [process.env.FRONTEND],
     httpOnly: true,
     credentials: true,
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", process.env.FRONTEND);
+  res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
 app.use(cookieParser());
 app.use(express.json());
 
