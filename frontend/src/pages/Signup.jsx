@@ -18,7 +18,9 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(inputs);
+    // console.log(inputs);
+    inputs.username.trim();
+    inputs.password.trim();
     await signup(inputs);
   };
 

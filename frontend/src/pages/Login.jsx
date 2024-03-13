@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await login(username.current.value, password.current.value);
+    await login(username.current.value.trim(), password.current.value.trim());
   };
 
   return (
