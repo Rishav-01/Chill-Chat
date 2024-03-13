@@ -7,13 +7,6 @@ config();
 
 const app = express();
 
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", process.env.FRONTEND);
-  res.setHeader("Access-Control-Allow-Methods", "POST, GET");
-  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  next();
-});
-
 app.use(
   cors({
     origin: [process.env.FRONTEND],
@@ -22,6 +15,13 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", process.env.FRONTEND);
+  res.setHeader("Access-Control-Allow-Methods", "POST, GET");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
+});
 
 const server = http.createServer(app);
 const io = new Server(server, {
