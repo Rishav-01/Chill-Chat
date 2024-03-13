@@ -17,6 +17,7 @@ app.use(
     httpOnly: true,
     credentials: true,
     methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 app.use(cookieParser());
