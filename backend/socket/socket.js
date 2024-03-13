@@ -10,13 +10,13 @@ const app = express();
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", process.env.FRONTEND);
   res.setHeader("Access-Control-Allow-Methods", "POST, GET");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
 });
 
 app.use(
   cors({
     origin: [process.env.FRONTEND],
-    httpOnly: true,
     credentials: true,
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
