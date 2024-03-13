@@ -16,6 +16,7 @@ app.use(
     origin: true,
     httpOnly: true,
     credentials: true,
+    methods: ["GET", "POST"],
   })
 );
 app.use(cookieParser());
