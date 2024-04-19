@@ -14,6 +14,8 @@ export const SocketContextProvider = ({ children }) => {
   const { authUser } = useAuthContext();
   const url = import.meta.env.VITE_URL;
 
+  // Connect to Socket on load
+
   useEffect(() => {
     if (authUser) {
       const socket = io(url, {
