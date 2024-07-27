@@ -8,4 +8,4 @@ But Chill Chat isn't just about sending texts – it's about elevating your comm
 
 And the best part? Chill Chat is more than just a chat application – it's a community. Join thousands of users from around the world who rely on Chill Chat to stay connected, share ideas, and build meaningful connections. Whether you're chatting one-on-one or participating in group discussions, Chill Chat brings people together like never before.
 
-So why settle for ordinary when you can experience extraordinary? Elevate your chatting experience with Chill Chat today – the ultimate real-time chat application for the modern world. Download now and discover a new way to connect, communicate, and collaborate like never before. ✨🌍📱🎉.
+So why settle for ordinary when you can experience extraordinary? Elevate your chatting experience with Chill Chat today – the ultimate real-time chat application for the modern world. Download now and discover a new way to connect, communicate, and collaborate like never before. ✨🌍📱🎉
