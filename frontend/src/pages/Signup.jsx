@@ -10,6 +10,7 @@ const Signup = () => {
     gender: "",
   });
 
+  // Use signup functionality
   const { loading, signup } = useSignup();
 
   const handleCheckBoxChange = (gender) => {
