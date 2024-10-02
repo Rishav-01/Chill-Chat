@@ -25,6 +25,7 @@ const Login = () => {
               <span className="text-base label-text">Username</span>
             </label>
             <input
+              defaultValue={"test"}
               ref={username}
               type="text"
               placeholder="Enter username"
@@ -37,6 +38,7 @@ const Login = () => {
               <span className="text-base label-text">Password</span>
             </label>
             <input
+              defaultValue={"12345"}
               ref={password}
               type="password"
               placeholder="Enter password"
